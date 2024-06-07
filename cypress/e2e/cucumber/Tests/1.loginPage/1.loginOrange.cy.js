@@ -30,3 +30,11 @@ And('I enter invalid username and passwrd', () => {
 Then('login page should display Invalid credentials message', () => {
     cy.get('.oxd-alert-content-text').should('have.text', 'Invalid credentials')
 })
+
+//ScenarioTC003
+
+Then('login page should display {string}',(db)=>{
+    cy.get('.oxd-topbar-header-breadcrumb-module').should('have.text',db)
+})
+
+
