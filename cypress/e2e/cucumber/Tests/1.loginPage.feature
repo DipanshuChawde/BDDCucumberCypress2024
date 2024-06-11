@@ -14,7 +14,7 @@ Feature: Login functionality of Orange HRM web site
         And I enter invalid username and passwrd
         When I click on login button
         Then login page should display Invalid credentials message
-
+@smoke 
     Scenario: TC003 I should be able to login OHRM web page with valid username and password
         # Given I navigate to OHRM login webpage valid
         And I enter username and passwrd
