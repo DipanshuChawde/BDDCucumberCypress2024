@@ -8,7 +8,7 @@ Feature: varify login functionality of OHRM
         Then validate for valid user page
 
     # [{username:"Admin",password:"admin123"}]
-
+    
     Scenario Outline: TC 002 Verify login functionality OHRM
         Given Navigate to OHRM url page
         When I enter <username> and <password>
