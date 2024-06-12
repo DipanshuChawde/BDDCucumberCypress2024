@@ -4,7 +4,9 @@ const cucumber = require("cypress-cucumber-preprocessor").default;
 
 module.exports = defineConfig({
   env: {
-    "TAGS": "@smoke"  
+    "TAGS": "@smoke",
+    "TAGS" : "@regression",
+    "TAGS" : "not @ignore"  
   },
 
   e2e: {

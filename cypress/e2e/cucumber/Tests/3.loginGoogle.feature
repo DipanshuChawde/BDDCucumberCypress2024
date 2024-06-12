@@ -1,10 +1,10 @@
 Feature: Google page validation
-    @smoke
+    @smoke @regression
     Scenario: google page
         Given i visit google page
         When i see "Google" in title
         Then i see "google" in url
-    @smoke
+    @smoke @regression
     Scenario Outline: lambda test web page
         Given i visit lambda test web login page
         When i enter <userEmail> and <password>

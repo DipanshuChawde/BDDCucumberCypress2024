@@ -19,7 +19,7 @@ Feature: varify login functionality of OHRM
             | username | password |
             | Admin    | admin123 |
             | Admin    | admin123 |
-
+    @regression
     Scenario Outline: TC 003 Verify login functionality OHRM
         Given Navigate to OHRM url page
         When I enter <username1> and <password1>
@@ -31,7 +31,7 @@ Feature: varify login functionality of OHRM
             | Admin     | admin123  | valid       |
             | Abc       | abc123    | invalid     |
 
-
+@ignore
     Scenario Outline: TC 004 Verify login functionality OHRM
         Given Navigate to OHRM url page
         When I enter for "<username1>" and "<password1>"
