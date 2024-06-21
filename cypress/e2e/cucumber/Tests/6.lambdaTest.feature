@@ -4,9 +4,9 @@ Feature: Verify new user register for lambda test
         And i click on continue button
         When i fill the form and i click on continue button
         Then i check for new user created
-Examples:
-    |index|
-    |0|
-    |1|
+        Examples:
+            | index |
+            | 0     |
+            | 1     |
 
 

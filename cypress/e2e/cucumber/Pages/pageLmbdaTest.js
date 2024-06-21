@@ -14,7 +14,7 @@ export default class MyLTPage {
     }
 
     visitUrl(){
-        cy.visit(url)
+        cy.visit(this.selector.url)
 
     }
 
@@ -29,7 +29,14 @@ export default class MyLTPage {
         cy.get(this.selector.telephone).type(userData.ph)
         cy.get(this.selector.password).type(userData.pw)
         cy.get(this.selector.passwordC).type(userData.pw)
-        cy.get(this.selector.agreeCheckbox).click()
+        cy.get(this.selector.agreeCheckbox).click({force:true})
         cy.get(this.selector.continueRegister).click()
     }
+
+    validateText(css,text){
+        cy.get(css).should('have.text',text)
+    }
 }
+
+
+//cy.get('ul[class="mz-sub-menu-96 dropdown-menu"]').find('li').contains(' Login').click({force: true})

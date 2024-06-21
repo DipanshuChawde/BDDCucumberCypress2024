@@ -2,14 +2,14 @@ export default[
     {
 fn : "dipanshu",
 ln : "chawde",
-email : `dipanshuchawde${Math.floor(Math.random()*100)}`,
+email : `dipanshuchawde${Math.floor(Math.random()*100)}@gmail.com`,
 ph : "9922447802",
 pw : "dipanshu"
 },
 {
     fn : "nitin",
     ln : "chawde",
-    email : `nitinchawde${Math.floor(Math.random()*100)}`,
+    email : `nitinchawde${Math.floor(Math.random()*100)}@gmail.com`,
     ph : "9922447801",
     pw : "nitinChawde"
     }
